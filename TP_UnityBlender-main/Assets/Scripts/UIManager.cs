@@ -5,10 +5,17 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-
     public TMP_Text score;
     public TMP_Text timer;
-    public GameObject gameOvertext;
+
+    public GameObject gameOverPanel;
+    public GameObject winPanel;
+
+    void Start()
+    {
+        gameOverPanel.SetActive(false);
+        winPanel.SetActive(false);
+    }
 
     public void UpdateScore(int newscore)
     {
@@ -22,6 +29,11 @@ public class UIManager : MonoBehaviour
 
     public void ShowGameOver()
     {
-        gameOvertext.SetActive(true);
+        gameOverPanel.SetActive(true);
+    }
+
+    public void ShowWin()
+    {
+        winPanel.SetActive(true);
     }
 }
