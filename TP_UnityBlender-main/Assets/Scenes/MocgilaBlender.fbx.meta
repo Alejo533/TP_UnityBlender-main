@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: dc8acb0278c97a54c917156d0f019191
+guid: 2425612263dae7c4498e9c13f2c81bd9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Mochila basico
-    2100002: Cierre
-    2100004: Mangas
+    2100000: Base mochila
+    2100002: Cierre.001
+    2100004: Cierre2
+    2100006: Mangas.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
+    4300000: Mochila
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
