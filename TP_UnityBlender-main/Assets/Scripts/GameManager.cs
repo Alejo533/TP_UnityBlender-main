@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
         if (timer < 0)
         {
             timer = 0;
+            uiManager.ShowGameOver();
+            Time.timeScale = 0;
         }
 
         uiManager.UpdateTimer(timer);

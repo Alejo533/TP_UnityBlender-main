@@ -24,6 +24,11 @@ public class Colisiones : MonoBehaviour
             Debug.Log("Colision con " + other.gameObject.name);
 
             Destroy(other.gameObject);
+
+            if (score == 5){
+                uiManager.ShowWin();
+                Time.timeScale = 0;
+            }
         }
     }
 }
