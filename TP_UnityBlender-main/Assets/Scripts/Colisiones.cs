@@ -6,10 +6,12 @@ public class Colisiones : MonoBehaviour
 {
     private int score = 0;
     private UIManager uiManager;
+    private GameManager gameManager;
 
     void Start()
     {
         uiManager = FindObjectOfType<UIManager>();
+        gameManager = FindObjectOfType<GameManager>();
         uiManager.UpdateScore(score);
     }
 
@@ -26,6 +28,7 @@ public class Colisiones : MonoBehaviour
             Destroy(other.gameObject);
 
             if (score == 5){
+                gameManager.ReiniciarJuego();
                 uiManager.ShowWin();
                 Time.timeScale = 0;
             }
