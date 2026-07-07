@@ -7,6 +7,12 @@ public class Colisiones : MonoBehaviour
     private int score = 0;
     private UIManager uiManager;
     private GameManager gameManager;
+    public GameObject score1;
+    public GameObject panel;
+    public GameObject panel1;
+    public GameObject timer1;
+    public GameObject panel2;
+    public GameObject panel3;
 
     void Start()
     {
@@ -31,6 +37,12 @@ public class Colisiones : MonoBehaviour
                 gameManager.ReiniciarJuego();
                 uiManager.ShowWin();
                 Time.timeScale = 0;
+                score1.SetActive(false);
+                panel.SetActive(false);
+                panel1.SetActive(false);
+                timer1.SetActive(false);
+                panel2.SetActive(false);
+                panel3.SetActive(false);
             }
         }
     }
